@@ -41,3 +41,97 @@ body {
   opacity: 1;
   padding: 10px 15px;
 }
+
+/********************
+CAROUSEL CSS
+**********************/
+
+.carousel {
+  width: 600px;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  background: #ddd;
+}
+.carousel-track-container {
+  overflow: hidden;
+}
+.carousel-track {
+  display: flex;
+  transition: transform 2s ease;
+}
+.carousel-slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+.carousel-slide img {
+  width: 100%;
+  display: block;
+}
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+}
+
+.prev {
+  left: 10px;
+}
+.next {
+  right: 10px;
+}
+/********************
+SLIDER CSS
+**********************/
+
+.slider-container {
+  overflow: hidden;
+  height: 300px;
+  width: 600px;
+  position: relative;
+  background: red;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+.slider-tracker-container {
+  overflow: hidden;
+}
+.slider-tracker {
+  display: flex;
+  flex-direction: column;
+  transition: transform 1s ease;
+}
+.slider-slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+.slider-tracker img {
+  width: 100%;
+  display: block;
+}
+.prevBtn,
+.nextBtn {
+  right: 50%;
+  transform: translateX(50%) rotate(90deg);
+  z-index: 10;
+  position: absolute;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.prevBtn {
+  top: 10%;
+}
+.nextBtn {
+  bottom: 10%;
+}
